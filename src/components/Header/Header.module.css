@@ -1,0 +1,17 @@
+.header {
+    background-color: black;
+    border-bottom:2px solid red ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.title{
+    color: red;
+}
+
+.links{
+    color: white;
+    padding: 10px 12px;  
+    text-decoration: none;
+}
