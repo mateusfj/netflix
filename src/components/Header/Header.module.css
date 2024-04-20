@@ -1,6 +1,6 @@
 .header {
     background-color: black;
-    border-bottom:2px solid red ;
+    height: 70px;
     display:flex;
     align-items: center;
     justify-content: space-between;
