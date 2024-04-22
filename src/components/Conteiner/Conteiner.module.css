@@ -1,0 +1,11 @@
+*{
+    margin:0;
+}
+
+
+.conteiner{
+    background-color: black;
+    color: white;
+    text-align: start;
+    padding:0 5%;
+}

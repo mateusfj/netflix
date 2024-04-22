@@ -2,7 +2,6 @@
     background-color: black;
     border-top: 2px solid red;
     position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
