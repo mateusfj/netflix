@@ -5,6 +5,8 @@ import logo from "../../logo.png"
 function Header() {
 
 
+    /* useState = avisa que o valor de determinda variavel esta mudando e manda o react renderizar o novo valor setado*/
+
     return (
         <header className={styles.header}>
 
@@ -18,7 +20,10 @@ function Header() {
                     <Link className={styles.link} to="/">Home</Link>
                 </div>
                 <div>
-                    <Link className={styles.link} to="/assistir">Assitir</Link>
+                    <Link className={styles.link} to="/assistir">Assistir</Link>
+                </div>
+                <div>
+                    <Link className={styles.link} to="/pesquisar">Pesquisar</Link>
                 </div>
             </nav>
 

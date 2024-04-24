@@ -9,6 +9,13 @@ import filmes from "../../json/filmes.json"
 
 function Assistir() {
 
+    /*find() = De filmes retorne um filme onde esse filme.id seja identico ao params.id
+    
+    useParams() = captura os parametros da url e traz em um objeto e podemos armazenar em uma variavel para acessa-la 
+    */
+
+
+
     const params = useParams()
     const filme = filmes.find(filme => filme.id === params.id)
 

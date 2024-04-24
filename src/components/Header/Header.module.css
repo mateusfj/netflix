@@ -10,12 +10,16 @@
 
 .header img{width: 95px; height: 31px;}
 
+.header h2{color: white;}
+
 .header nav{
     display: flex;
 }
 
 .header div{
     padding: 10px 12px;
+    display: flex;
+    align-items: center;
 }
 
 .title{
