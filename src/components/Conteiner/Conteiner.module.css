@@ -4,7 +4,9 @@
 
 
 .conteiner{
+    min-height: 100vh;
     color: white;
     text-align: start;
     padding:0 4rem;
+    overflow: hidden;
 }

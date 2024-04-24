@@ -1,3 +1,4 @@
+import Slide from "../../components/Slider";
 import Banner from "../../components/Banner";
 import Card from "../../components/Cards";
 import Category, {categoria , filterCategory} from "../../components/Category";
@@ -15,11 +16,13 @@ function Home() {
 
                 {categoria.map((category, index) =>
                     <Category category={category} key={category}>
-                        {
-                            filterCategory(index).map(filme => {
-                                return <Card id={filme.id} key={filme.id}></Card>
-                            })
-                        }
+                        <Slide>
+                            {
+                                filterCategory(index).map(filme => {
+                                    return <Card id={filme.id} key={filme.id}></Card>
+                                })
+                            }
+                        </Slide>
                     </Category>
                 )
                 }{

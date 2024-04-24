@@ -1,8 +1,15 @@
-.category{}
+.category{
+    min-height: 280px;
+    min-width: 1200px;
+}
+
+.category h2 {
+    cursor:default
+}
 
 .category div{
     display: flex;
     gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
+    width: 100%;
 }
