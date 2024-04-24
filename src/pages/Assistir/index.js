@@ -1,5 +1,4 @@
 import styles from "./Assistir.module.css"
-import Header from "../../components/Header";
 import Conteiner from "../../components/Conteiner";
 import Footer from "../../components/Footer";
 import { useParams } from "react-router-dom";
@@ -21,7 +20,6 @@ function Assistir() {
 
     return (
         <div>
-            <Header />
             <Conteiner>
                 <div className={styles.assistir}>
                     <iframe width="560" height="315" 

@@ -3,12 +3,13 @@ import Card from "../../components/Cards";
 import Category, {categoria , filterCategory} from "../../components/Category";
 import Conteiner from "../../components/Conteiner";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+
+
+
 
 function Home() {
     return (
         <div>
-            <Header />
             <Banner />
             <Conteiner>
 

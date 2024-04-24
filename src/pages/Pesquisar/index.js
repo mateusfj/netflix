@@ -1,4 +1,4 @@
-import Header from "../../components/Header";
+import styles from "./Pesquisar.module.css";
 import Conteiner from "../../components/Conteiner";
 import Footer from "../../components/Footer";
 import Search from "../../components/Search";
@@ -6,8 +6,7 @@ import Search from "../../components/Search";
 
 function Pesquisar() {
     return (
-        <div>
-            <Header />
+        <div className={styles.pesquisar}>
             <Conteiner>
                 <Search />
             </Conteiner>

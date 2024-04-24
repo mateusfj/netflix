@@ -1,11 +1,15 @@
-.result{
+.search{}
 
+.search input{
+    border:2px solid white;
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    background-color: black;
+}
+.search input:focus{
+    outline: none;
+    color: white;
 }
 
-.inputPesquisa{
-    
-}
-
-.search{display: flex; flex-direction: column; justify-content:center; align-items: center;}
-
-.result{display: flex; flex-wrap: wrap;width: 100%; gap: 5px;}
+.result{display: flex; flex-wrap: wrap;width: 100%; gap: 5px; justify-content: center;}

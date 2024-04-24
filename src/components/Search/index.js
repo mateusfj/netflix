@@ -16,14 +16,13 @@ function Search() {
         if (nome === '') {
             return filmes.map(filme => <Card id={filme.id} key={filme.id} />)
         } else {
-            let result = filmes.filter(filme => filme.title === nome)
+            let result = filmes.filter(filme => filme.title.includes(nome) || filme.category.includes(nome))
             return result.map(result => <Card id={result.id} key={result.id}/>)
         }
     }
-
     return (
         <div className={styles.search}>
-            <input placeholder="Pesquisar" onChange={Pesquisa} className="inputPesquisa"></input>
+            <input placeholder="Título, gente e gêneros" onChange={Pesquisa} className="inputPesquisa"></input>
             <div className={styles.result}>
                 {trazFilme(nome)}
             </div>

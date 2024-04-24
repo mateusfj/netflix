@@ -1,33 +1,33 @@
 .header {
-    background-color: black;
-    height: 70px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    transition: 0.5s;
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
+    justify-content: start;
+    padding: 0 4rem;    
     
 }
 
 .header img{width: 95px; height: 31px;}
 
-.header h2{color: white;}
 
 .header nav{
     display: flex;
+    margin-left: 50px;
 }
 
 .header div{
-    padding: 10px 12px;
+    padding: 10px 14px;
     display: flex;
     align-items: center;
 }
 
-.title{
-    color: red;
-    text-decoration: none;
-}
-
 .link{
-    color: white;  
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e5e5e5;
 }
+.link:focus{color:white;}

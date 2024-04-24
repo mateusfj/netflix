@@ -1,14 +1,32 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import logo from "../../logo.png"
+import React, { useState, useEffect } from "react";
 
 function Header() {
+    const [scroll, setScroll] = useState('black')
+
+    const handleScroll = () => {
+        if (window.scrollY > 10) {
+            setScroll('black')
+        } else{
+            setScroll('transparent')
+        }
+    }
+    useEffect(() => {
+            window.addEventListener('scroll', handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    })
+
 
 
     /* useState = avisa que o valor de determinda variavel esta mudando e manda o react renderizar o novo valor setado*/
 
     return (
-        <header className={styles.header}>
+        <header style={{  backgroundColor: scroll }} className={styles.header}>
 
             <Link className={styles.link} to="/">
                 <img src={logo}></img>
@@ -17,13 +35,19 @@ function Header() {
             <nav>
 
                 <div>
-                    <Link className={styles.link} to="/">Home</Link>
+                    <Link className={styles.link} to="/">Início</Link>
                 </div>
                 <div>
-                    <Link className={styles.link} to="/assistir">Assistir</Link>
+                    <Link className={styles.link} to="/pesquisar">Filmes</Link>
                 </div>
                 <div>
-                    <Link className={styles.link} to="/pesquisar">Pesquisar</Link>
+                    <Link className={styles.link} to="/pesquisar">Séries</Link>
+                </div>
+                <div>
+                    <Link className={styles.link} to="/">Bombando</Link>
+                </div>
+                <div>
+                    <Link className={styles.link} to="/pesquisar">Minha Lista</Link>
                 </div>
             </nav>
 
