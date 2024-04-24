@@ -4,11 +4,11 @@ import logo from "../../logo.png"
 import React, { useState, useEffect } from "react";
 
 function Header() {
-    const [scroll, setScroll] = useState('black')
+    const [scroll, setScroll] = useState('transparent')
 
     const handleScroll = () => {
         if (window.scrollY > 10) {
-            setScroll('black')
+            setScroll('#141414')
         } else{
             setScroll('transparent')
         }

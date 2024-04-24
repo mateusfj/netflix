@@ -1,6 +1,4 @@
 .footer{
-
-    background-color: black;
     border-top: 2px solid red;
     position: absolute;
     width: 100%;
@@ -27,7 +25,6 @@
 }
 
 .footer img{
-    background-color: black;
     width: 100px;
     height: 28px;
     margin-top: 20px;

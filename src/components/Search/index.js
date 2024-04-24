@@ -2,6 +2,7 @@ import styles from "./Search.module.css"
 import { useState } from "react";
 import filmes from "../../json/filmes.json"
 import Card from "../Cards"
+import Conteiner from "../Conteiner"
 
 
 
@@ -12,19 +13,29 @@ function Search() {
 
     const [nome, setNome] = useState('')
 
-    function trazFilme(nome) {
-        if (nome === '') {
-            return filmes.map(filme => <Card id={filme.id} key={filme.id} />)
-        } else {
-            let result = filmes.filter(filme => filme.title.includes(nome) || filme.category.includes(nome))
-            return result.map(result => <Card id={result.id} key={result.id}/>)
-        }
+    let result = []
+
+    if (nome === '') {
+        result = filmes
+    } else {
+        result = filmes.filter(filme => filme.title.includes(nome) || filme.category.includes(nome))
     }
+
+    console.log(result.length)
+
+
     return (
         <div className={styles.search}>
+
             <input placeholder="Título, gente e gêneros" onChange={Pesquisa} className="inputPesquisa"></input>
+            <h3>{`Resultado da pesquisa: ${result.length}`}</h3>
+
             <div className={styles.result}>
-                {trazFilme(nome)}
+                <Conteiner >
+                    <div
+                        className={styles.conteiner}>{result.map(result => (<Card id={result.id} key={result.id} />))}
+                    </div>
+                </Conteiner>
             </div>
         </div>
     );
