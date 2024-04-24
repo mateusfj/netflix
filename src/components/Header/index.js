@@ -1,21 +1,27 @@
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import logo from "../../logo.png"
 
-function Header (){
-    function meuEvento(e){
-        console.log('clicou em mim!!')
-        e.preventDefault()
-    }
-    
-    return(
+function Header() {
+
+
+    return (
         <header className={styles.header}>
-            
-            <h1 className={styles.title}>Matflix</h1>
+
+            <Link className={styles.link} to="/">
+                <img src={logo}></img>
+            </Link>
 
             <nav>
-                <a href="#" className={styles.links}>Assitir</a>
-                <a href="#" onClick={meuEvento} className={styles.links}>Home</a>
+
+                <div>
+                    <Link className={styles.link} to="/">Home</Link>
+                </div>
+                <div>
+                    <Link className={styles.link} to="/assistir">Assitir</Link>
+                </div>
             </nav>
-            
+
         </header>
     );
 }

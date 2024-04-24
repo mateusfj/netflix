@@ -5,13 +5,25 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-}
-.title{
-    color: red;
+    
 }
 
-.links{
-    color: white;
-    padding: 10px 12px;  
+.header img{width: 95px; height: 31px;}
+
+.header nav{
+    display: flex;
+}
+
+.header div{
+    padding: 10px 12px;
+}
+
+.title{
+    color: red;
+    text-decoration: none;
+}
+
+.link{
+    color: white;  
     text-decoration: none;
 }
