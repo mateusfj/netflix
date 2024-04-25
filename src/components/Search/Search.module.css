@@ -5,7 +5,7 @@
     height: 40px;
     width: 250px;
     padding: 5px;
-    background-color: #00050D       ;
+    background-color: #00050D;
 }
 .search input:focus{
     outline: none;
@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    justify-content: center;
 }
 
 .result{display: flex; flex-wrap: wrap;width: 100%; gap: 5px; justify-content: center;}

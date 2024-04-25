@@ -1,13 +1,12 @@
-
 import style from "./Banner.module.css";
 
-function Banner() {
-    
-    let image = 'deadpool'
+
+function Banner({imageNome}) {
 
     return (
         <section className={style.banners}>
-            <div className={style.banner} style={{backgroundImage: `url('/images/banner-${image}.jpeg')`}}>
+            <div className={style.banner} style={{backgroundImage: `url('/images/banner-${imageNome}.jpeg')`}}>
+                <div className={style.degrade}></div>
             </div>
         </section>
     );

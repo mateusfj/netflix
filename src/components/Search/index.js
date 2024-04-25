@@ -21,7 +21,7 @@ function Search() {
         result = filmes.filter(filme => filme.title.includes(nome) || filme.category.includes(nome))
     }
 
-    console.log(result.length)
+    console.log(result)
 
 
     return (
@@ -32,8 +32,8 @@ function Search() {
 
             <div className={styles.result}>
                 <Conteiner >
-                    <div
-                        className={styles.conteiner}>{result.map(result => (<Card id={result.id} key={result.id} />))}
+                    <div className={styles.conteiner}>
+                        {result.map(result => (<Card id={result.id}/>))}
                     </div>
                 </Conteiner>
             </div>

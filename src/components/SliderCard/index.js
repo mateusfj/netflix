@@ -1,4 +1,4 @@
-import "./Slider.css";
+import "./SliderCard.css";
 import Slider from "react-slick";
 
 /* OBS = 1 passo é instalar o react-slick
@@ -16,15 +16,14 @@ entao importa o Slider de react-slick e passa as configuracoes por meio do expre
 
 
 
-function Slide({children}) {
+function SliderCard({children}) {
   let settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     adaptiveHeigth:true,
     variableWidth:true,
-    slidesToShow: 4,
-    slidesToScroll: 6,
+
+    slidesToScroll: 1,
   }; 
 
   return(
@@ -36,4 +35,4 @@ function Slide({children}) {
   );
 }
 
-export default Slide;
+export default SliderCard;

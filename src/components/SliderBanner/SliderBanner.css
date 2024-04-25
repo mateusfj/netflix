@@ -1,0 +1,10 @@
+.sliderBanner .slick-next{
+    right: 0;
+}
+.sliderBanner .slick-next:before{
+    display: none;
+}
+
+.sliderBanner .slider{
+    margin-bottom: -160px;
+}

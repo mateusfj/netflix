@@ -1,12 +1,7 @@
-*{
-    margin:0;
-}
-
-
 .conteiner{
     min-height: 100vh;
     color: white;
     text-align: start;
-    padding:0 4rem;
+    padding:0 2rem;
     overflow: hidden;
 }
