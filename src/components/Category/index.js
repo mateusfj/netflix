@@ -1,7 +1,7 @@
 import styles from "./Category.module.css"
 import filmes from "../../json/filmes.json"
 
-export const categoria = ["Animes", "Só na Matflix",]
+export const categoria = ["Animes", "Só na Matflix","Mais assistidos", "Ficção científica"]
 
 export function filterCategory(index) {
   return filmes.filter(filme => filme.category === categoria[index])
